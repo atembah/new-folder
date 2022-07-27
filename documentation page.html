@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+  <title>Documentation Page</title>
+  <link rel="stylesheet" href="mystyles.css" type="text/css"/>
+  <meta charset="UTF-8">
+</head>
+<body>
+ <body>
+  <header id="page-header">
+    <div id="top-header">
+      <div id="logo">
+        <a href="#"><i class="fad fa-file-code "></i></a><span id="code">Atembah</span><span id="Scape">Scape</span>
+      </div>
+      <div id="header-links">
+        <a href=""><i class="fab fa-facebook-f "></i></a>
+        <a href=" "><i class="fab fa-twitter"></i></a>
+        <a href=" "><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+    <div id="buttom-header">
+      <div id="header-text">
+        <h1>AtembahScape Documentation: </h1>
+        <p>Technical information to help you learn, configure, manage, and succeed in HTML.</p>
+      </div>
+      <div id="area">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <a href="#documentation"><button><i class="fad fa-chevron-double-down"></i></button></a>
+    </div>
+
+  </header>
+  <div id="documentation">
+    <nav id="navbar">
+      <p id="HTML-icon"><i class="fab fa-html5"></i></p>
+      <header id="nav-header">
+        <h1>HTML Media</h1>
+      </header>
+      <p><a class="nav-link" href="#What_is_Multimedia?">What is Multimedia?
+        </a></p>
+      <p><a class="nav-link" href="#HTML_Video">HTML Video
+        </a></p>
+      <p><a class="nav-link" href="#HTML_Audio">HTML Audio
+        </a></p>
+      <p><a class="nav-link" href="#HTML_YouTube_Videos">HTML YouTube Videos
+        </a></p>
+      <p><a class="nav-link" href="#HTML_Plug-ins">HTML Plug-ins</a></p>
+
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_Multimedia?">
+        <header class="section-title">
+          <h1>What is Multimedia?</h1>
+        </header>
+        <p>Multimedia comes in many different formats. It can be almost anything you can hear or see, like images, music, sound, videos, records, films, animations, and more.</p>
+        <p> Web pages often contain multimedia elements of different types and formats.</p>
+      </section>
+      <section class="main-section" id="HTML_Video">
+        <header class="section-title">
+          <h1>HTML Video</h1>
+        </header>
+        <p>The HTML <code class="code-elt">&lt;video&gt;</code> element is used to show a video on a web page.</p>
+        <h3>Example</h3>
+        <div class="code-segment">
+          <code>
+            &lt;video width="320" height="240" controls&gt;
+            &lt;source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"&gt;
+            &lt;source src="movie.ogg" type="https://www.w3schools.com/html/mov_bbb.ogg"&gt;
+            Your browser does not support the video tag.
+            &lt;/video&gt;
+          </code>
+        </div>
+        <h3>Output</h3>
+        <video width="320" height="240" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <h3>How it Works</h3>
+        <ul>
+          <li> The controls attribute adds video controls, like play, pause, and volume.</li>
+          <li>It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.</li>
+          <li>The<code class="code-elt">&lt;source&gt;</code> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.</li>
+          <li>The text between the <code class="code-elt"> &lt;video&gt;</code> and <code class="code-elt"> &lt;/video&gt;</code> tags will only be displayed in browsers that do not support the <code> &lt;video&gt;</code> element.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Audio">
+        <header class="section-title">
+          <h1>HTML Audio</h1>
+        </header>
+        <p>The HTML <code class="code-elt">&lt;audio&gt;</code> element is used to play an audio file on a web page.</p>
+        <h3>Example</h3>
+        <div class="code-segment">
+          <code>
+            &lt;audio controls&gt;
+            &lt;source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" &gt;
+            &lt;source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" &gt;
+            Your browser does not support the audio element.
+            &lt;/audio &gt;
+          </code>
+        </div>
+        <h3>Output</h3>
+        <audio controls>
+          <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <h3>How it works</h3>
+        <ul>
+          <li>The controls attribute adds audio controls, like play, pause, and volume.</li>
+          <li>The <code class="code-elt">&lt;source&gt;</code> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.</li>
+          <li>The text between the <code class="code-elt">&lt;audio&gt;</code> and <code class="code-elt">&lt;audio&gt;</code> tags will only be displayed in browsers that do not support the <code class="code-elt">&lt;audio&gt;</code> element.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_YouTube_Videos">
+        <header class="section-title">
+          <h1>HTML YouTube Videos</h1>
+        </header>
+        <p>The easiest way to play videos in HTML, is to use YouTube.</p>
+        <h3>Example</h3>
+        <div class="code-segment">
+          <code>
+            &lt;iframe width="420" height="315"
+            src="https://www.youtube.com/embed/5b1h4WzOUgc?autoplay=1&mute=1"
+            title="YouTube video player&gt;
+            &lt;iframe&gt;
+          </code>
+        </div>
+        <h3>Output</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5b1h4WzOUgc?autoplay=1&mute=1" title="YouTube video player"></iframe>
+        <h3>How it works</h3>
+        <ul>
+          <li> Upload/Select the video to YouTube</li>
+          <li>Define an <code class="code-elt">&lt;iframe&gt;</code> element in your web page</li>
+          <li>Let the src attribute point to the video URL</li>
+          <li>Use the width and height attributes to specify the dimension of the player</li>
+        </ul>
+        <p>You could add other parameters to the URL such as:</p>
+        <ul>
+          <li> <code class="code-elt">mute=1</code> and <code class="code-elt">autoplay=1</code> to let your video start playing automatically (but muted) or</li>
+          <li><code class="code-elt">loop=1</code> to let your video loop forever.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="HTML_Plug-ins">
+        <header class="section-title">
+          <h1>HTML Plug-ins</h1>
+        </header>
+        <p>Plug-ins are computer programs that extend the standard functionality of the browser.</p>
+        <div id="warning">
+          <p id="warning-note"><b>Warning</b></p>
+
+          <p>Most browsers no longer support Java Applets and Plug-ins.</p>
+        </div>
+        <ol>
+          <li>
+            <p><b>The <code class="code-elt">&lt;object&gt;</code> Element</b></p>
+
+            <p>The <code class="code-elt">&lt;object&gt;</code> element is supported by <b>all</b> browsers. It defines an embedded object within an HTML document.</p>
+            <p><b>Example</b></p>
+            <div class="code-segment">
+              <code>
+                &lt;object data="audi.jpeg"&gt;&lt;/object&gt;
+              </code>
+            </div>
+            <p><b>Output</b></p>
+            <object data="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5EjLVFwhdxyf7YeuHVF3Wn8LmrG959FINJg&usqp=CAU"></object>
+          </li>
+          <li>
+            <p><b>The <code class="code-elt">&lt;embed&gt;</code> Element</b></p>
+
+            <p>The <code class="code-elt">&lt;embed&gt;</code>element is supported in all <b>major</b> browsers. It also defines an embedded object within an HTML document.</p>
+            <h3>Example</h3>
+            <div class="code-segment">
+              <code>
+                &lt;embed src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b-4_ARUtc0DxqzuduzJx83l4fwjnhD2Wlg&usqp=CAU"&gt;
+              </code>
+            </div>
+            <h3>Output</h3>
+            <embed src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-b-4_ARUtc0DxqzuduzJx83l4fwjnhD2Wlg&usqp=CAU">
+            <p>Web browsers have supported the <code>&lt;embed&gt;</code> element for a long time. However, it has not been a part of the HTML specification before HTML5.</p>
+          </li>
+        </ol>
+      </section>
+      <div id="footer">
+        <ul>
+          <li>
+            <p>Reference: <a href="https://www.w3schools.com/html/html_media.asp" target="_blank">W3schools</a></p>
+          </li>
+
+          <li>
+            <p>Blog: <a href="https://dev.to/babib" target="_blank">dev.to</a>
+            </p>
+          </li>
+          <li>
+            <p>Developer: <span id="babi">Babi</span></p>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+  </div>
+</body>
+    
+</body>
+</html>
